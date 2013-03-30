@@ -1,3 +1,11 @@
+asset_pipeline:
+  bundle: true            # Default = true
+  compress: false          # Default = true
+  output_path: assets     # Default = assets
+  display_path: nil       # Default = nil
+  gzip: false             # Default = false
+
+
 flickr:
   api_key: e86e03c748a53887b237e691c55cf7d3
   secret: 2ba99ec1778e2ca3
