@@ -129,7 +129,7 @@ end
 # rake build
 desc "Generate the site (no server)"
 task :build do
-  system "jekyll --no-server"
+  system "jekyll --no-server --no-auto"
 end
 
 # rake watch
@@ -197,6 +197,9 @@ task :transfer do
     Rake::Task[:build].invoke
     system "rsync #{settings} #{source} #{destination}"
     puts "Your site was transfered."
+  elsif command == "jekyll-s3"
+    Rake::Task[:build].invoke
+    system "jekyll-s3"
   else
     raise "#{command} isn't a valid file transfer command."
   end

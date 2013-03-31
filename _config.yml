@@ -1,8 +1,14 @@
 auto: true
 include: [.htaccess]
+exclude: [Rakefile, Gemfile, README.md]
+url: http://m-andersen.net
+
+author:
+  name: 'Martin Andersen'
+  email: 'draugen@draugrheim.net'
 
 asset_pipeline:
-  bundle: true            # Default = true
+  bundle: false            # Default = true
   compress: false          # Default = true
   output_path: assets     # Default = assets
   display_path: nil       # Default = nil
@@ -10,8 +16,17 @@ asset_pipeline:
 
 
 flickr:
-  api_key: e86e03c748a53887b237e691c55cf7d3
-  secret: 2ba99ec1778e2ca3
+  api_key: 'e86e03c748a53887b237e691c55cf7d3'
+  secret: '2ba99ec1778e2ca3'
+
+flickr_set:
+  gallery_tag:   'p'
+  gallery_class: 'gallery'
+  a_href:        nil
+  a_target:      '_blank'
+  image_rel:     ''
+  image_size:    's'
+  api_key:       'e86e03c748a53887b237e691c55cf7d3'
 
 post:
   template: _post.txt
@@ -23,7 +38,7 @@ editor: gvim
 git:
   branch: master
 transfer:
-  command: rsync
-  settings: -av
+  command: jekyll-s3
+  settings: nil
   source: _site/
-  destination: ~/Git/username.github.com/
+  destination: nil
