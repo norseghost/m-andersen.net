@@ -1,3 +1,6 @@
+auto: true
+include: [.htaccess]
+
 asset_pipeline:
   bundle: true            # Default = true
   compress: false          # Default = true
@@ -9,3 +12,18 @@ asset_pipeline:
 flickr:
   api_key: e86e03c748a53887b237e691c55cf7d3
   secret: 2ba99ec1778e2ca3
+
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: md
+editor: gvim
+git:
+  branch: master
+transfer:
+  command: rsync
+  settings: -av
+  source: _site/
+  destination: ~/Git/username.github.com/
