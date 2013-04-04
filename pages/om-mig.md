@@ -1,5 +1,5 @@
----jekyll-
-layout: page
+---
+layout: default
 title: Om mig
 ---
 Jeg er Martin Andreas Andersen, og er uddannet pædagog. Jeg har arbejdet med "de forunderlige" i over ti år - mennesker der skiller sig ud fra mængden på den ene eller anden måde.

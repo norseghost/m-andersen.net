@@ -1,4 +1,5 @@
 ---
-title:
+title: "Welcome!" 
 layout: default
 ---
+Welcome!

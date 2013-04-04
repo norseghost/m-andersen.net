@@ -1,8 +1,15 @@
 auto: true
 include: [.htaccess]
-exclude: [Rakefile, Gemfile, README.md]
-url: http://m-andersen.net
+exclude: [
+  Rakefile,
+  Gemfile,
+  README.md,
+  *.sublime-*
+  ]
 
+name: 'm-andersen.net'
+description: 'Fatherhood, geekery, fitness, social work'
+url: http://m-andersen.net
 author:
   name: 'Martin Andersen'
   email: 'draugen@draugrheim.net'
@@ -29,10 +36,10 @@ flickr_set:
   api_key:       'e86e03c748a53887b237e691c55cf7d3'
 
 post:
-  template: _post.txt
+  template: _templates/_post.txt
   extension: md
 page:
-  template: _page.txt
+  template: templates/_page.txt
   extension: md
 editor: gvim
 git:
