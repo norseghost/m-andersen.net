@@ -6,6 +6,18 @@ exclude: [
   README.md,
   *.sublime-*
   ]
+markdown: pandoc
+pandoc:
+  extensions:
+    - blank_before_header
+    - fenced_code_blocks
+    - smart
+    - strikeout
+    - superscript
+    - subscript
+    - footnotes
+    - inline_notes
+    - definition_lists
 
 name: 'm-andersen.net'
 description: 'Fatherhood, geekery, fitness, social work'
@@ -13,6 +25,8 @@ url: http://m-andersen.net
 author:
   name: 'Martin Andersen'
   email: 'draugen@draugrheim.net'
+
+project_dir: projects
 
 asset_pipeline:
   bundle: false            # Default = true

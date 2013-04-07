@@ -1,5 +1,5 @@
 ---
 title: "Welcome!" 
-layout: default
+layout: page
 ---
 Welcome!
